@@ -4,11 +4,14 @@ public class Sum {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Sum of Two numbers ");
+
         System.out.print("Enter First number : ");
-        int a = input.nextInt();
+        float num1 = input.nextFloat();
+
         System.out.print("Enter Second number : ");;
-        int b = input.nextInt();
-        int Sum = a + b;
+        float num2  = input.nextFloat();
+
+        float Sum = num1 + num2;
         System.out.println("You entered two numbers Sum is " + Sum );
     }
 }
