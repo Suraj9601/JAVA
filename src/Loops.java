@@ -1,12 +1,12 @@
 public class Loops {
     public static void main(String[] args) {
 
-        // while loop
-//        int count = 1;
-//        while (count != 5) {
-//            System.out.println(count);
-//            count++;
-//        }
+         // while loop
+        int count = 1;
+        while (count != 5) {
+            System.out.println(count);
+            count++;
+        }
 
         // for loop
         for (int i=1; i != 5; i++) {
