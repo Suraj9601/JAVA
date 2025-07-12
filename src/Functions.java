@@ -2,20 +2,36 @@ import java.util.Scanner;
 
 public class Functions {
     public static void main(String[] args) {
-
-        // Q : Take input of 2 numbers and print sum
-
+        String msg = greet();
+        System.out.println(msg);
+        int ans = Sum();
+        System.out.println(ans);
+        int ans2 = Sum2(10,20);
+        System.out.println(ans2);
+    }
+    // return the value
+    static int Sum() {
         Scanner input = new Scanner(System.in);
-        int num1,num2,sum;
+        int num1, num2, sum;
 
-        System.out.print("Enter the First number : ");
-         num1 = input.nextInt();
+        System.out.print("Enter the First number: ");
+        num1 = input.nextInt();
 
-        System.out.print("Enter Second number : ");
-         num2 = input.nextInt();
+        System.out.print("Enter the Second number: ");
+        num2 = input.nextInt();
 
-         sum = num1 + num2;
+        sum = num1 + num2;
 
-        System.out.println(sum);
+        return sum;
+    }
+
+    static int Sum2(int a,int b) {
+        int sum = a + b;
+        return sum;
+    }
+
+    static String greet() {
+        String greeting = "How are you";
+        return greeting;
     }
 }
